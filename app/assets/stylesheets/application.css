@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this script, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets script can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this script. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+table#movies th.lite {
+    background-color: yellow;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: White;
+    color: DarkSlateGrey;
+    font-family: Times New Roman, Times, serif;
+    font-size: 10pt;
+}
+
+table#books {
+    margin: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#notice, #warning {
+    background: rosybrown;
+    margin: 1em 0;
+    padding: 4px;
+}
+
+form label {
+    display: block;
+    line-height: 25px;
+    font-weight: bold;
+    color: maroon;
+}
+
+
+table#books th, table#books td {
+    padding: 4px;
+    text-align: left;
+}
+
+table#books th {
+    border: 2px solid white;
+    font-weight: bold;
+    background-color: #d6f5b3;
+}
+
+div#main {
+    margin: 0;
+    padding: 0 20px 20px;
+}
+
+a {
+    background: transparent;
+    color: maroon;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1 {
+    color: maroon;
+    font-size: 150%;
+    font-style: italic;
+    display: block;
+    width: 100%;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid DarkSlateGrey;
+}
+
+h1.title {
+    margin: 0 0 1em;
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border-bottom: 4px solid #00ffae;
+    font-size: 2em;
+    font-style: normal;
+}

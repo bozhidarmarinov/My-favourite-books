@@ -1,0 +1,16 @@
+<h2>Create New Book</h2>
+<%= form_tag books_path, :method => :post do %>
+  <%= label :book, :title, 'Title' %>
+  <%= text_field :book, :title %>
+  <%= label :book, :genre, 'Rating' %>
+  <%= select :book, :genre, ['Action and Adventure','Science fiction','Drama','Horror','Romance', 'Mystery'] %>
+  <%= label :book, :publish_date, 'Published On' %>
+  <%= date_select :book, :publish_date, { start_year: 100.years.ago.year, end_year: Date.today.year, default: Date.today} %>
+  <%= label :book, :isbn, 'ISBN' %>
+  <%= text_field :book, :isbn %>
+  <%= label :book, :description, 'Description' %>
+  <%= text_field :book, :description %>
+  <%= label :book, :author, 'Author' %>
+  <%= text_field :author, 'Author' %>
+  <%= submit_tag 'Save Changes' %>
+<% end %>
